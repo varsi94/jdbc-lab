@@ -6,4 +6,6 @@ public interface IDalWrapper {
 	void connect(String username, String password);
 	
 	String getStatistics();
+	
+	void disconnect();
 }

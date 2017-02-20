@@ -15,5 +15,7 @@ public class App {
 		} else if (params[0].equals("getStatistics")) {
 			System.out.println(wrapper.getStatistics());
 		}
+		
+		wrapper.disconnect();
 	}
 }

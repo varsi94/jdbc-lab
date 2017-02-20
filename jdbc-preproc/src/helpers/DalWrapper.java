@@ -73,4 +73,9 @@ public class DalWrapper<T1, T2> implements IDalWrapper {
 			return null;
 		}
 	}
+
+	@Override
+	public void disconnect() {
+		dal.disconnect();
+	}
 }

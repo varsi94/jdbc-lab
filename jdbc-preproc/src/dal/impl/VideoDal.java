@@ -255,4 +255,14 @@ public class VideoDal implements DataAccessLayer<Video, Member> {
 			return false;
 		}
 	}
+
+	@Override
+	public void disconnect() {
+		try {
+			connection.close();
+			connection = null;
+		} catch (SQLException e) {
+			connection = null;
+		}
+	}
 }

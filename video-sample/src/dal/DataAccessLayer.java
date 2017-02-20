@@ -23,4 +23,6 @@ public interface DataAccessLayer<T1, T2> {
 	void validate(T1 input) throws ValidationException;
 	
 	boolean setAutoCommit(boolean value) throws NotConnectedException;
+	
+	void disconnect();
 }
